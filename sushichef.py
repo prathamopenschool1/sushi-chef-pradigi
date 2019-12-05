@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """
 The PraDigi chef uses a mix of content from three sources:
-
 1/ PRATHAM Open School website prathamopenschool.org is organized as follow:
     - There is top level set of topics (e.g. Mathematics, English, Science, ...)
         - Each topic has subtopics (e.g. Geometry, Algebra, ...)
@@ -9,7 +8,6 @@ The PraDigi chef uses a mix of content from three sources:
                 - Each lesson has contents like videos, pdfs and html5 apps
         - The Fun/ page contains various videos and HTML5 visaulisations
         - The Stories/ page contains PDFs
-
 We use an Spreadsheet in order to unify and organize the content from these three
 sources into a single channel:
 https://docs.google.com/spreadsheets/d/1kPOnTVZ5vwq038x1aQNlA2AFtliLIcc2Xk5Kxr852mg/edit#gid=342105160
@@ -260,9 +258,9 @@ PRADIGI_STRINGS = {
             'KhelBadi': 'Khel-Baadi',
         },
         'course_ids_by_subject_en': {
-            'KhelBadi': "CRS149",
-            'DekhiyeaurKariye': "CRS203",
             'English': "Angrezi",
+            # 'KhelBadi': "CRS149",
+            # 'DekhiyeaurKariye': "CRS203",
         }
     },
     "pnb": {
