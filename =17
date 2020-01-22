@@ -1,0 +1,4 @@
+Collecting pyzmq
+  Downloading https://files.pythonhosted.org/packages/75/89/6f0ea51ffa9c2c00c0ab0460f137b16a5ab5b47e3b060c5b1fc9ca425836/pyzmq-18.1.0-cp36-cp36m-manylinux1_x86_64.whl (1.1MB)
+Installing collected packages: pyzmq
+Successfully installed pyzmq-18.1.0

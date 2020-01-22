@@ -259,6 +259,7 @@ PRADIGI_STRINGS = {
         },
         'course_ids_by_subject_en': {
             'English': "Angrezi",
+            # 'Music' : 'Mausiqee',
             # 'KhelBadi': "CRS149",
             # 'DekhiyeaurKariye': "CRS203",
         }
