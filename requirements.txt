@@ -62,7 +62,6 @@ pdf2image==1.6.0
 pexpect==4.7.0
 pickleshare==0.7.5
 Pillow==5.4.1
-pkg-resources==0.0.0
 pluggy==0.12.0
 pressurecooker==0.0.25
 prometheus-client==0.7.1
@@ -101,5 +100,5 @@ wcwidth==0.1.7
 webencodings==0.5.1
 websocket-client==0.40.0
 widgetsnbextension==3.5.1
-youtube-dl==2019.8.13
+youtube-dl==2020.1.15
 zipp==0.5.2
