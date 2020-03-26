@@ -198,6 +198,7 @@ PRADIGI_STRINGS = {
             "Story": "Story",
             "Financial Literacy": "Financial Literacy",
             "KhelBadi": "Khel-Baadi",
+            # "InclusiveEducation": "Inclusive Education",
         },
         'course_ids_by_subject_en': {
             'KhelBadi': "CRS157",
@@ -238,7 +239,8 @@ PRADIGI_STRINGS = {
             'Story': 'গল্প',
             'Game': 'খেলা',
             'KhelBadi': 'আঙিনায় খেলা',
-            'KhelPuri': 'শহরে খেলা'
+            'KhelPuri': 'শহরে খেলা',
+            # 'Art Project': 'শিল্প কার্যক্রম',
         },
         'course_ids_by_subject_en': {
             'Music': 'Sangeet',
@@ -294,11 +296,13 @@ PRADIGI_STRINGS = {
             'Fun': 'ಮೋಜು',
             'Game': 'ಗೇಮ್',
             'KhelBadi': 'ಆಟದ ಅಂಗಳ',
-            'KhelPuri': 'ಆಟದ ನಗರಿ'
+            'KhelPuri': 'ಆಟದ ನಗರಿ',
+            # 'Art Project': 'ಕಲಾ ಯೋಜನೆ',
         },
         'course_ids_by_subject_en': {
             'Music': 'Sangeet',
             'KhelPuri': "CRS169",
+            # 'Art Project': 'ಕಲಾ ಯೋಜನೆ',
         }
     },
     "ta": {

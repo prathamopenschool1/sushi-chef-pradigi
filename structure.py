@@ -69,6 +69,7 @@ PRADIGI_SUBJECTS = [
     'Healthcare',
     'Construction',
     'Financial Literacy',
+    'Inclusive Education',  #for english
     '14_To_18',
     #
     # Games pages
