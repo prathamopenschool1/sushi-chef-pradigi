@@ -17,7 +17,6 @@ from corrections import (PRADIGI_CORRECTIONS_LIST, CORRECTIONS_ACTION_KEY,
                          ADD_MARGIN_TOP_ACTION, CORRECTIONS_SOURCE_URL_PAT_KEY)
 from corrections import should_replace_with
 
-
 LOGGER.setLevel(logging.DEBUG)
 
 

@@ -5,7 +5,7 @@ import requests
 
 from ricecooker.config import LOGGER
 
-from structure import _clean_dict
+# from structure import _clean_dict
 
 LOGGER.setLevel(logging.DEBUG)
 
@@ -45,6 +45,18 @@ def download_corrections_csv():
     with open(PRADIGI_CORRECTIONS_CSV_PATH, 'w') as csvfile:
         csvfile.write(csv_data)
         LOGGER.info('Succesfully saved ' + PRADIGI_CORRECTIONS_CSV_PATH)
+
+def _clean_dict(row):
+    """
+    Transform empty strings values of dict `row` to None.
+    """
+    row_cleaned = {}
+    for key, val in row.items():
+        if val is None or val == '':
+            row_cleaned[key] = None
+        else:
+            row_cleaned[key] = val.strip()
+    return row_cleaned
 
 def load_pradigi_corrections():
     download_corrections_csv()
