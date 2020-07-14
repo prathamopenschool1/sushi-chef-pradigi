@@ -143,8 +143,6 @@ if not os.path.exists(CONVERTED_MP3_FILES_DIR):
     print("done1")
 
 
-# / @DJ: move lines  /\   /\   /\   to top of file
-
 def download_and_convert_wav_file(wav_url):
     """
     Kolibri AudioNode only support .mp3 files and not .wav, so we must convert.
@@ -345,13 +343,13 @@ def should_compress_video(video_web_resource):
 
 
 # Test the wrt_to_ricecooker_tree function on samples of each content kind
-RESOURCE_SAMPLES = [
-    'sample_PrathamVideoResource.json',
-    'sample_PrathamZipResource.json',
-    'sample_PrathamPdfResource.json',
-    'sample_PrathamAudioResource.json',
-    'sample_Topic.json',
-]
+# RESOURCE_SAMPLES = [
+#     'sample_PrathamVideoResource.json',
+#     'sample_PrathamZipResource.json',
+#     'sample_PrathamPdfResource.json',
+#     'sample_PrathamAudioResource.json',
+#     'sample_Topic.json',
+# ]
 #
 # for resource_sample in RESOURCE_SAMPLES:
 #     print('\n\nLoading sample from', resource_sample)
@@ -410,26 +408,15 @@ class PraDigiChef(JsonTreeChef):
             children=[],
         )
 
-        # for resource_sample in RESOURCE_SAMPLES:
-        #     print('\n\nLoading sample from', resource_sample)
-        #     sample_path = os.path.join('chefdata', 'trees', resource_sample)
-        #     with open(sample_path, 'r', encoding='utf-8') as jtree:
-        #         web_resource_tree = json.load(jtree)
-        #         web_resource_tree_children = web_resource_tree['children']
-        #         tree_sample = web_resource_tree_children[0]  # a single node
-        #         ricecooker_subtree = wrt_to_ricecooker_tree(tree_sample)
-        #         pprint(ricecooker_subtree)
-        #         ricecooker_json_tree['children'].append(ricecooker_subtree)
-        #         time.sleep(1)
         # once all the samples work you can try the full tree
         with open("chefdata/trees/pradigi_hindi_web_resource_tree.json", 'r', encoding='utf-8') as jtree:
             web_resource_tree = json.load(jtree)
             web_resource_tree_children = web_resource_tree['children']
             for lang_subtree in web_resource_tree_children:
                 ricecooker_subtree = wrt_to_ricecooker_tree(lang_subtree)
-                print(ricecooker_subtree, 'subtree0')
+                pprint(ricecooker_subtree)
                 ricecooker_json_tree['children'].append(ricecooker_subtree)
-        print(ricecooker_json_tree, 'subtree1')
+        pprint(ricecooker_json_tree)
         json_tree_path = self.get_json_tree_path()
         write_tree_to_json_tree(json_tree_path, ricecooker_json_tree)
 
